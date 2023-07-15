@@ -1,9 +1,9 @@
 ﻿#region TwoSum
 
-var twoSum = new Problems.Two_Sum.Solution();
+var twoSum = new Problems.TwoSum.Solution();
 
 var twoSumResponse = twoSum.TwoSum2(twoSum.nums2, 6);
-//Problems.Two_Sum.ResponseOutput.Write(twoSumResponse);
+//Problems.TwoSum.ResponseOutput.Write(twoSumResponse);
 
 #endregion
 
