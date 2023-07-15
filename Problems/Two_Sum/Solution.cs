@@ -9,7 +9,7 @@ namespace Problems.Two_Sum
         public int[] nums3 = new int[] { 3, 3 };
         public int[] nums4 = new int[] { 31, 12, 24 };
 
-        /// O(n^2)
+        /// O(n^2). Runtime - 216ms, Memory - 44.46mb
         public int[] TwoSum(int[] nums, int target)
         {
             for (int i = 0; i < nums.Length; i++)
@@ -31,28 +31,25 @@ namespace Problems.Two_Sum
             return new int[] { -1, -1 };
         }
 
-        //public int[] TwoSum2(int[] nums, int target)
-        //{
-        //    Dictionary<int, int> table = new();
+        /// O(n). Runtime - 157ms, Memory - 45.17mb
+        public int[] TwoSum2(int[] nums, int target)
+        {
+            Dictionary<int, int> map = new Dictionary<int, int>();
 
-        //    for (int i = 0; i < nums.Length; i++)
-        //    {
-        //        var b = target - nums[i];
+            for (int i = 0; i < nums.Length; i++)
+            {
+                int diff = target - nums[i];
+                if (map.ContainsKey(diff))
+                {
+                    return new int[] { map[diff], i };
+                }
 
-        //        if (table.ContainsValue(b))
-        //        {
-        //            var first = Math.Min(i, table.GetValueOrDefault(b));
-        //            var second = Math.Max(i, table.GetValueOrDefault(b));
-
-        //            return new int[] { first, second };
-        //        }
-        //        else
-        //        {
-        //            table.Add(i.nums[i]);
-        //        }
-        //    }
-
-        //    return new int[] { -1, -1 };
-        //}
+                if (!map.ContainsKey(nums[i]))
+                {
+                    map.Add(nums[i], i);
+                }
+            }
+            return new int[] { -1, -1 };
+        }
     }
 }
