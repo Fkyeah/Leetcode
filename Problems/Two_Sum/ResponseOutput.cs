@@ -1,8 +1,8 @@
 ﻿namespace Problems.Two_Sum
 {
-    public static class Response
+    public static class ResponseOutput
     {
-        public static void Output(int[] response)
+        public static void Write(int[] response)
         {
             for (int i = 0; i < response.Length; i++)
             {
