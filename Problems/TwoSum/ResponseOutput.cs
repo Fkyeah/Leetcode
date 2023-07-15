@@ -1,4 +1,4 @@
-﻿namespace Problems.Two_Sum
+﻿namespace Problems.TwoSum
 {
     public static class ResponseOutput
     {
