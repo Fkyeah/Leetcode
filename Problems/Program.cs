@@ -17,8 +17,14 @@ var inPalindromeResponse = inPalindrome.IsPalindrome4(inPalindrome.x);
 
 var romanToInteger = new Problems.RomanToInteger.Solution();
 var romanToIntegerResponse = romanToInteger.RomanToInt(romanToInteger.s3);
-Problems.RomanToInteger.ResponseOutput.Write(romanToIntegerResponse);
+//Problems.RomanToInteger.ResponseOutput.Write(romanToIntegerResponse);
 #endregion
+#region LongestCommonPrefix
 
+var longestCommonPrefix = new Problems.LongestCommonPrefix.Solution();
+var longestCommonPrefixResponse = longestCommonPrefix.LongestCommonPrefix(longestCommonPrefix.strs2);
+Problems.LongestCommonPrefix.ResponseOutput.Write(longestCommonPrefixResponse);
+
+#endregion
 
 
