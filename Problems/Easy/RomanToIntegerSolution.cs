@@ -2,11 +2,6 @@
 {
     public class RomanToIntegerSolution
     {
-        public string s = "III";
-        public string s2 = "LVIII";
-        public string s3 = "MCMXCIV";
-        public string s4 = "IV";
-
         public int RomanToInt(string s)
         {
             int result = 0;
