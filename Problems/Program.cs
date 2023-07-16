@@ -5,14 +5,15 @@
 var twoSum = new TwoSumSolution();
 var twoSumResponse = twoSum.TwoSum2(twoSum.nums2, 6);
 
-ResponseOutput.WriteIEnumerable(twoSumResponse);
+//ResponseOutput.Write(twoSumResponse);
 
 #endregion
 #region PalindromeNumber
 
-var inPalindrome = new Problems.PalindromeNumber.Solution();
+var inPalindrome = new PalindromeNumberSolution();
 var inPalindromeResponse = inPalindrome.IsPalindrome4(inPalindrome.x);
-//Problems.PalindromeNumber.ResponseOutput.Write(inPalindromeResponse);
+
+ResponseOutput.Write(inPalindromeResponse);
 
 #endregion
 #region RomanToInteger
