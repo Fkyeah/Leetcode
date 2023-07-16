@@ -1,8 +1,6 @@
-﻿using System.Collections;
-
-namespace Problems.TwoSum
+﻿namespace Problems
 {
-    public class Solution
+    public class TwoSumSolution
     {
         public int[] nums = new int[] { 2, 7, 11, 15 };
         public int[] nums2 = new int[] { 3, 2, 4 };
