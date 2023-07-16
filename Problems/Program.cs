@@ -1,4 +1,5 @@
 ﻿using Problems;
+using Problems.Easy;
 
 #region TwoSum
 
