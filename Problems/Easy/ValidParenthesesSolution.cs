@@ -2,11 +2,6 @@
 {
     public class ValidParenthesesSolution
     {
-        public string s = "()";
-        public string s2 = "()[]{}";
-        public string s3 = "(]";
-        public string s4 = "{[]}";
-
         /// Runtime - 77 ms, Memory - 37,78 Mb
         public bool IsValid(string s)
         {
