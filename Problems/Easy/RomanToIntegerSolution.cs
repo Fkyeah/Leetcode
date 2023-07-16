@@ -1,12 +1,7 @@
-﻿namespace Problems
+﻿namespace Problems.Easy
 {
     public class RomanToIntegerSolution
     {
-        public string s = "III";
-        public string s2 = "LVIII";
-        public string s3 = "MCMXCIV";
-        public string s4 = "IV";
-
         public int RomanToInt(string s)
         {
             int result = 0;
@@ -26,7 +21,7 @@
             return result + GetIntFromRoman(s[s.Length - 1]);
         }
 
-        public int GetIntFromRoman(char c)
+        private int GetIntFromRoman(char c)
         {
             return c switch
             {

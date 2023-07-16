@@ -1,12 +1,7 @@
-﻿namespace Problems
+﻿namespace Problems.Easy
 {
     public class ValidParenthesesSolution
     {
-        public string s = "()";
-        public string s2 = "()[]{}";
-        public string s3 = "(]";
-        public string s4 = "{[]}";
-
         /// Runtime - 77 ms, Memory - 37,78 Mb
         public bool IsValid(string s)
         {
@@ -35,15 +30,15 @@
             }
 
             return stk.Count() == 0;
+        }
 
-            bool IsMatch(char a, char b)
-            {
-                return (
-                    (a == '(' && b == ')')
-                    || (a == '{' && b == '}')
-                    || (a == '[' && b == ']')
-                    );
-            }
+        private bool IsMatch(char a, char b)
+        {
+            return
+                a == '(' && b == ')'
+                || a == '{' && b == '}'
+                || a == '[' && b == ']'
+                ;
         }
     }
 }
