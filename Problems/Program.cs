@@ -13,14 +13,16 @@ var twoSumResponse = twoSum.TwoSum2(twoSum.nums2, 6);
 var inPalindrome = new PalindromeNumberSolution();
 var inPalindromeResponse = inPalindrome.IsPalindrome4(inPalindrome.x);
 
-ResponseOutput.Write(inPalindromeResponse);
+//ResponseOutput.Write(inPalindromeResponse);
 
 #endregion
 #region RomanToInteger
 
-var romanToInteger = new Problems.RomanToInteger.Solution();
+var romanToInteger = new RomanToIntegerSolution();
 var romanToIntegerResponse = romanToInteger.RomanToInt(romanToInteger.s3);
-//Problems.RomanToInteger.ResponseOutput.Write(romanToIntegerResponse);
+
+ResponseOutput.Write(romanToIntegerResponse);
+
 #endregion
 #region LongestCommonPrefix
 
@@ -36,5 +38,6 @@ var validParenthesesResponse = validParentheses.IsValid(validParentheses.s4);
 //Problems.ValidParentheses.ResponseOutput.Write(validParenthesesResponse);
 
 #endregion
+
 
 
