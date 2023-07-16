@@ -1,6 +1,6 @@
-﻿namespace Problems.ValidParentheses
+﻿namespace Problems
 {
-    public class Solution
+    public class ValidParenthesesSolution
     {
         public string s = "()";
         public string s2 = "()[]{}";
@@ -39,8 +39,8 @@
             bool IsMatch(char a, char b)
             {
                 return (
-                    (a == '(' && b == ')') 
-                    || (a == '{' && b == '}') 
+                    (a == '(' && b == ')')
+                    || (a == '{' && b == '}')
                     || (a == '[' && b == ']')
                     );
             }

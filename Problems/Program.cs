@@ -29,14 +29,15 @@ var romanToIntegerResponse = romanToInteger.RomanToInt(romanToInteger.s3);
 var longestCommonPrefix = new LongestCommonPrefixSolution();
 var longestCommonPrefixResponse = longestCommonPrefix.LongestCommonPrefix(longestCommonPrefix.strs);
 
-ResponseOutput.Write(longestCommonPrefixResponse);
+//ResponseOutput.Write(longestCommonPrefixResponse);
 
 #endregion
 #region ValidParentheses
 
-var validParentheses = new Problems.ValidParentheses.Solution();
+var validParentheses = new ValidParenthesesSolution();
 var validParenthesesResponse = validParentheses.IsValid(validParentheses.s4);
-//Problems.ValidParentheses.ResponseOutput.Write(validParenthesesResponse);
+
+ResponseOutput.Write(validParenthesesResponse);
 
 #endregion
 
