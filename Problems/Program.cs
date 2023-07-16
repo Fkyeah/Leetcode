@@ -21,14 +21,15 @@ var inPalindromeResponse = inPalindrome.IsPalindrome4(inPalindrome.x);
 var romanToInteger = new RomanToIntegerSolution();
 var romanToIntegerResponse = romanToInteger.RomanToInt(romanToInteger.s3);
 
-ResponseOutput.Write(romanToIntegerResponse);
+//ResponseOutput.Write(romanToIntegerResponse);
 
 #endregion
 #region LongestCommonPrefix
 
-var longestCommonPrefix = new Problems.LongestCommonPrefix.Solution();
-var longestCommonPrefixResponse = longestCommonPrefix.LongestCommonPrefix(longestCommonPrefix.strs2);
-//Problems.LongestCommonPrefix.ResponseOutput.Write(longestCommonPrefixResponse);
+var longestCommonPrefix = new LongestCommonPrefixSolution();
+var longestCommonPrefixResponse = longestCommonPrefix.LongestCommonPrefix(longestCommonPrefix.strs);
+
+ResponseOutput.Write(longestCommonPrefixResponse);
 
 #endregion
 #region ValidParentheses
@@ -36,13 +37,6 @@ var longestCommonPrefixResponse = longestCommonPrefix.LongestCommonPrefix(longes
 var validParentheses = new Problems.ValidParentheses.Solution();
 var validParenthesesResponse = validParentheses.IsValid(validParentheses.s4);
 //Problems.ValidParentheses.ResponseOutput.Write(validParenthesesResponse);
-
-#endregion
-#region LongestCommonPrefix
-
-var longestCommonPrefix = new Problems.LongestCommonPrefix.Solution();
-var longestCommonPrefixResponse = longestCommonPrefix.LongestCommonPrefix(longestCommonPrefix.strs2);
-Problems.LongestCommonPrefix.ResponseOutput.Write(longestCommonPrefixResponse);
 
 #endregion
 
