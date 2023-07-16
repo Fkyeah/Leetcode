@@ -1,4 +1,4 @@
-﻿namespace Problems
+﻿namespace Problems.Easy
 {
     public class RomanToIntegerSolution
     {
@@ -26,7 +26,7 @@
             return result + GetIntFromRoman(s[s.Length - 1]);
         }
 
-        public int GetIntFromRoman(char c)
+        private int GetIntFromRoman(char c)
         {
             return c switch
             {

@@ -1,6 +1,6 @@
 ﻿using System.Text;
 
-namespace Problems
+namespace Problems.Easy
 {
     public class PalindromeNumberSolution
     {
@@ -14,29 +14,29 @@ namespace Problems
             var digitsArray = x.ToString().ToCharArray();
 
             return IsEqualArrays(digitsArray, digitsArray.Reverse());
+        }
 
-            bool IsEqualArrays(IEnumerable<char> array1, IEnumerable<char> array2)
+        private bool IsEqualArrays(IEnumerable<char> array1, IEnumerable<char> array2)
+        {
+            if (array1.Count() != array2.Count())
+                return false;
+
+            var firstEnumerator = array1.GetEnumerator();
+            var secondEnumerator = array2.GetEnumerator();
+
+            for (int i = 0; i < array1.Count(); i++)
             {
-                if (array1.Count() != array2.Count())
+                firstEnumerator.MoveNext();
+                secondEnumerator.MoveNext();
+
+                var first = firstEnumerator.Current;
+                var second = secondEnumerator.Current;
+
+                if (!first.Equals(second))
                     return false;
-
-                var firstEnumerator = array1.GetEnumerator();
-                var secondEnumerator = array2.GetEnumerator();
-
-                for (int i = 0; i < array1.Count(); i++)
-                {
-                    firstEnumerator.MoveNext();
-                    secondEnumerator.MoveNext();
-
-                    var first = firstEnumerator.Current;
-                    var second = secondEnumerator.Current;
-
-                    if (!first.Equals(second))
-                        return false;
-                }
-
-                return true;
             }
+
+            return true;
         }
 
         /// Runtime 65ms, Memory - 29.48mb
@@ -57,12 +57,12 @@ namespace Problems
         /// Runtime 40ms, Memory - 34.98mb
         public bool IsPalindrome3(int x)
         {
-            var currentHash = ASCIIEncoding.ASCII.GetBytes(x.ToString());
-            var reverseHash = ASCIIEncoding.ASCII.GetBytes(x.ToString().Reverse().ToArray());
+            var currentHash = Encoding.ASCII.GetBytes(x.ToString());
+            var reverseHash = Encoding.ASCII.GetBytes(x.ToString().Reverse().ToArray());
             if (currentHash.Length == reverseHash.Length)
             {
                 int i = 0;
-                while ((i < currentHash.Length) && (currentHash[i] == reverseHash[i]))
+                while (i < currentHash.Length && currentHash[i] == reverseHash[i])
                 {
                     i += 1;
                 }

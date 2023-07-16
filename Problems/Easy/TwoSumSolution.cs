@@ -1,4 +1,4 @@
-﻿namespace Problems
+﻿namespace Problems.Easy
 {
     public class TwoSumSolution
     {

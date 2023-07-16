@@ -1,4 +1,4 @@
-﻿namespace Problems
+﻿namespace Problems.Easy
 {
     public class ValidParenthesesSolution
     {
@@ -35,15 +35,15 @@
             }
 
             return stk.Count() == 0;
+        }
 
-            bool IsMatch(char a, char b)
-            {
-                return (
-                    (a == '(' && b == ')')
-                    || (a == '{' && b == '}')
-                    || (a == '[' && b == ']')
-                    );
-            }
+        private bool IsMatch(char a, char b)
+        {
+            return
+                a == '(' && b == ')'
+                || a == '{' && b == '}'
+                || a == '[' && b == ']'
+                ;
         }
     }
 }

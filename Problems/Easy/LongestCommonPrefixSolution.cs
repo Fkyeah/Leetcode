@@ -1,9 +1,10 @@
-﻿namespace Problems
+﻿namespace Problems.Easy
 {
     public class LongestCommonPrefixSolution
     {
         public string[] strs = { "flower", "flow", "flight" };
         public string[] strs2 = { "dog", "racecar", "car" };
+
         /// Runtime - 97ms, Memory - 40.5mb
         public string LongestCommonPrefix(string[] strs)
         {
