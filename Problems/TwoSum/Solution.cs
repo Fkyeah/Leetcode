@@ -1,6 +1,6 @@
 ﻿using System.Collections;
 
-namespace Problems.Two_Sum
+namespace Problems.TwoSum
 {
     public class Solution
     {
@@ -26,7 +26,7 @@ namespace Problems.Two_Sum
                         return new int[] { i, j };
                     }
                 }
-            }            
+            }
 
             return new int[] { -1, -1 };
         }
