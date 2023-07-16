@@ -8,6 +8,7 @@
         public string LongestCommonPrefix(string[] strs)
         {
             string longestPrefix = strs.MinBy(x => x.Length) ?? string.Empty;
+
             while (longestPrefix.Length > 0)
             {
                 if (strs.Count(x => x.StartsWith(longestPrefix)) == strs.Length)
@@ -16,6 +17,7 @@
                 }
                 longestPrefix = longestPrefix.Substring(0, longestPrefix.Length - 1);
             }
+
             return longestPrefix;
         }
     }
