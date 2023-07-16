@@ -1,9 +1,11 @@
-﻿#region TwoSum
+﻿using Problems;
 
-var twoSum = new Problems.TwoSum.Solution();
+#region TwoSum
 
+var twoSum = new TwoSumSolution();
 var twoSumResponse = twoSum.TwoSum2(twoSum.nums2, 6);
-//Problems.TwoSum.ResponseOutput.Write(twoSumResponse);
+
+ResponseOutput.WriteIEnumerable(twoSumResponse);
 
 #endregion
 #region PalindromeNumber
@@ -30,7 +32,7 @@ var longestCommonPrefixResponse = longestCommonPrefix.LongestCommonPrefix(longes
 
 var validParentheses = new Problems.ValidParentheses.Solution();
 var validParenthesesResponse = validParentheses.IsValid(validParentheses.s4);
-Problems.ValidParentheses.ResponseOutput.Write(validParenthesesResponse);
+//Problems.ValidParentheses.ResponseOutput.Write(validParenthesesResponse);
 
 #endregion
 
