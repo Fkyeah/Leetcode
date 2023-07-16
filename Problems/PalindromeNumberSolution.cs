@@ -1,8 +1,8 @@
 ﻿using System.Text;
 
-namespace Problems.PalindromeNumber
+namespace Problems
 {
-    public class Solution
+    public class PalindromeNumberSolution
     {
         public int x = 121;
         public int x2 = -121;
