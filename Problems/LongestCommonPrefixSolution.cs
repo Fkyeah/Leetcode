@@ -4,7 +4,6 @@
     {
         public string[] strs = { "flower", "flow", "flight" };
         public string[] strs2 = { "dog", "racecar", "car" };
-
         /// Runtime - 97ms, Memory - 40.5mb
         public string LongestCommonPrefix(string[] strs)
         {
@@ -16,7 +15,6 @@
                 {
                     return longestPrefix;
                 }
-
                 longestPrefix = longestPrefix.Substring(0, longestPrefix.Length - 1);
             }
 
