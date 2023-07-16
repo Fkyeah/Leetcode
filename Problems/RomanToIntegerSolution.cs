@@ -1,6 +1,6 @@
-﻿namespace Problems.RomanToInteger
+﻿namespace Problems
 {
-    public class Solution
+    public class RomanToIntegerSolution
     {
         public string s = "III";
         public string s2 = "LVIII";

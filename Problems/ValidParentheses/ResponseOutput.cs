@@ -1,6 +1,6 @@
-﻿namespace Problems.PalindromeNumber
+﻿namespace Problems.ValidParentheses
 {
-    public static class ResponseOutput
+    public class ResponseOutput
     {
         public static void Write(bool response)
         {
