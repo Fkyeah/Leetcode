@@ -9,7 +9,7 @@ namespace Problems.Tests.Easy
         [DataTestMethod]
         [DataRow(new string[] { "flower", "flow", "flight" }, "fl")]
         [DataRow(new string[] { "dog", "racecar", "car" }, "")]
-        public void SolutionTests(string[] strs, string expectedResult)
+        public void Solution_Test(string[] strs, string expectedResult)
         {
             var solution = new LongestCommonPrefixSolution();
 

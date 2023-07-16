@@ -4,10 +4,6 @@ namespace Problems.Easy
 {
     public class PalindromeNumberSolution
     {
-        public int x = 121;
-        public int x2 = -121;
-        public int x3 = 10;
-
         /// Runtime 73ms, Memory - 32.74mb
         public bool IsPalindrome(int x)
         {
