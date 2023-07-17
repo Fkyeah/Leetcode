@@ -42,7 +42,10 @@ namespace Problems.Medium
             }
 
             if (reminder > 0)
+            {
                 resultStack.Push(reminder);
+            }
+                
 
             return resultStack;
         }
@@ -60,10 +63,10 @@ namespace Problems.Medium
         {
             stack.Push(listNode.val);
 
-            if (listNode.next is null)
-                return stack;
-            else
-                return GetStackFromNode(stack, listNode.next);
+            return listNode.next is null
+                ? stack
+                : GetStackFromNode(stack, listNode.next);
+
         }
     }
 }
