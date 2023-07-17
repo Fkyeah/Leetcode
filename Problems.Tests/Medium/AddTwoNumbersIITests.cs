@@ -34,6 +34,10 @@ namespace Problems.Tests.Medium
             return expectedResult.val == actualResult.val && CheckNodes(expectedResult.next, actualResult.next);
         }
 
+        /// <summary>
+        /// Input: l1 = [7,2,4,3], l2 = [5,6,4]. Output: [7,8,0,7]
+        /// </summary>
+        /// <returns></returns>
         private static IEnumerable<ListNode[]> FirstData()
         {
             var l1 = new ListNode(
@@ -78,6 +82,10 @@ namespace Problems.Tests.Medium
             };
         }
 
+        /// <summary>
+        /// Input: l1 = [1], l2 = [9,9]. Output: [1,0,0]
+        /// </summary>
+        /// <returns></returns>
         private static IEnumerable<ListNode[]> SecondData()
         {
             var l1 = new ListNode(
