@@ -19,14 +19,11 @@ namespace Problems.Medium
         private Stack<int> GetResultStack(Stack<int> stackL1, Stack<int> stackL2)
         {
             var reminder = 0;
-            int valueL1 = 0;
-            int valueL2 = 0;
-
             var resultStack = new Stack<int>();
 
-            while (stackL1.Count > 0 && stackL1.TryPop(out valueL1))
+            while (stackL1.TryPop(out var valueL1))
             {
-                var isSuccessL2Pop = stackL2.TryPop(out valueL2);
+                var isSuccessL2Pop = stackL2.TryPop(out var valueL2);
 
                 var resultValue = isSuccessL2Pop 
                     ? valueL1 + valueL2 + reminder
