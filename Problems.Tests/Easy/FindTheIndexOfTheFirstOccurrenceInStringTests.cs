@@ -4,7 +4,7 @@ using Problems.Easy;
 namespace Problems.Tests.Easy
 {
     [TestClass]
-    public class FindTheIndexOfTheFirstOccurrenceInString
+    public class FindTheIndexOfTheFirstOccurrenceInStringTests
     {
         private static FindTheIndexOfTheFirstOccurrenceInStringSolution _solution;
 
