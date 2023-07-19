@@ -22,7 +22,7 @@
                 prevArray = currArray;
             }
 
-            return prevArray.ToList();
+            return prevArray;
         }
     }
 }
