@@ -12,8 +12,6 @@
                 arr[0] = 1;
                 arr[arr.Length - 1] = 1;
 
-                
-
                 if (i > 2)
                 {
                     for (int j = 1; j <= (arr.Length - 1) / 2; j++)
